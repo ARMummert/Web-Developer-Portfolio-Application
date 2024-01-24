@@ -1,5 +1,6 @@
 from rest_framework import serializers
 from .models import Project, Experience, Programming_Experience, Education, Achievements, Certifications
+from rest_framework import serializers
 
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:

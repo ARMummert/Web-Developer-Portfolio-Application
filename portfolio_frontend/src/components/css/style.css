@@ -103,9 +103,14 @@ h2 {
 .message {
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row-reverse;
     align-items: left;
     font-size: 2.5rem;
     margin-top: 0px;
     margin-left: 250px;
+    margin-right: 250px;
+}
+
+.data {
+    background-color: brown;
 }
