@@ -56,7 +56,6 @@ class Achievements(models.Model):
 class Certifications(models.Model):
     certificate_name = models.CharField(max_length=100)
     date_received = models.DateField()
-    open_source_link = models.URLField(blank=True)
     show = models.BooleanField(default=True)
 
     def __str__(self):

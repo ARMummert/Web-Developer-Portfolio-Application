@@ -112,5 +112,12 @@ h2 {
 }
 
 .data {
-    background-color: brown;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.5rem;
+    margin-top: 0px;
+    margin-left: 250px;
+    margin-right: 250px;
 }

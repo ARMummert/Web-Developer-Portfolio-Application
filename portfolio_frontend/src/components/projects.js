@@ -19,10 +19,10 @@ const Projects = () => {
       }
     };
 
-    // Call the function to fetch data
+    
     fetchProjectsData();
-  }, []); // Empty dependency array to ensure useEffect runs only once on component mount
-
+  }, []); 
+  
   return (
     <div className='data'>
       <h1 className='welcome'>Projects Page</h1>
@@ -31,7 +31,9 @@ const Projects = () => {
           <li key={project.id}>
             <h2>{project.title}</h2>
             <p>{project.description}</p>
-            {/* Additional fields specific to your models */}
+            <p>{project.github}</p>
+            <p>{project.demo}</p>
+            <p>{project.image}</p>
           </li>
         ))}
       </ul>
