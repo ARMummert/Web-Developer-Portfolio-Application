@@ -1,6 +1,8 @@
 from rest_framework import serializers
-from .models import Project, Experience, Programming_Experience, Education, Achievements, Certifications
+from .models import Project, Experience, Programming_Experience, Education, Achievements, Certifications, Contact
 from rest_framework import serializers
+from rest_framework.response import Response
+from rest_framework import status
 
 class ProjectSerializer(serializers.ModelSerializer):
     class Meta:
@@ -31,3 +33,9 @@ class CertificationsSerializer(serializers.ModelSerializer):
     class Meta:
         model = Certifications
         fields = '__all__'
+
+class ContactSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Contact
+        fields = '__all__'
+

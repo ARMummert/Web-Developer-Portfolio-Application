@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, Experience, Programming_Experience, Education, Achievements, Certifications
+from .models import Project, Experience, Programming_Experience, Education, Achievements, Certifications, Contact
 
 admin.site.site_header = "Portfolio Admin"
 admin.site.site_title = "Portfolio Admin Portal"
@@ -10,3 +10,4 @@ admin.site.register(Experience)
 admin.site.register(Education)
 admin.site.register(Achievements)
 admin.site.register(Certifications)
+admin.site.register(Contact)
