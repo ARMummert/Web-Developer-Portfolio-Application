@@ -1,4 +1,3 @@
-// src/components/ContactForm.js
 import React, { useState } from 'react';
 
 const ContactForm = () => {
@@ -8,15 +7,15 @@ const ContactForm = () => {
     message: '',
   });
 
-  const handleChange = (e) => {
+  const handleChange = (event) => {
     setFormData({
       ...formData,
-      [e.target.name]: e.target.value,
+      [event.target.name]: event.target.value,
     });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const handleSubmit = async (event) => {
+    event.preventDefault();
 
     try {
         const response = await fetch('http://127.0.0.1:8000/api/contact', {
@@ -28,10 +27,8 @@ const ContactForm = () => {
         });
   
         if (response.ok) {
-          // Handle successful submission (e.g., show a success message or redirect)
           console.log('Form submitted successfully!');
         } else {
-          // Handle other status codes (e.g., show an error message)
           const data = await response.json();
           console.error('Error submitting form:', data);
         }
@@ -41,24 +38,28 @@ const ContactForm = () => {
     };
   
     return (
+      
       <form className='form' onSubmit={handleSubmit}>
-        <label>
-          Name:
-          <input type="text" name="name" value={formData.name} onChange={handleChange} />
+        <h1 className='contact-page'>Contact</h1>
+        <p className='contact-message'>Feel free to contact me with any questions or comments!</p>
+        <label id='contact-name'>
+          Name
+          <input className='name-box'type="text" name="name" value={formData.name} onChange={handleChange} />
         </label> 
         <br />
-        <label>
-          Email:
-          <input type="email" name="email" value={formData.email} onChange={handleChange} />
+        <label id='contact-name'>
+          Email
+          <input className='email-box' type="email" name="email" value={formData.email} onChange={handleChange} />
         </label>
         <br />
-        <label>
-          Message:
-          <textarea name="message" value={formData.message} onChange={handleChange} />
+        <label id='contact-message'>
+          Message
+          <textarea className='message-box' name="message" value={formData.message} onChange={handleChange} />
         </label>
         <br />
-        <button type="submit">Submit</button>
+        <button className='contact-btn' type="submit">Submit</button>
       </form>
+      
     );
   };
   

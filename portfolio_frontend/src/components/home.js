@@ -10,7 +10,9 @@ const Home = () => {
             <p className='message'>I'm a software engineer focusing on web development.  
             I create and build fullstack applications with engaging user interfaces 
             and responsive designs.</p>
+            
         </div>
+        
     );
 };
 

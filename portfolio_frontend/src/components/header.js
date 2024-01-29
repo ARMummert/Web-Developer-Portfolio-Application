@@ -31,7 +31,9 @@ const Header = () => {
                 </ul>
             </nav>
         </header>
+        <footer>&copy; 2024 Amy Mummert. All Rights Reserved.</footer>
         </div>
+       
         
     );
 };

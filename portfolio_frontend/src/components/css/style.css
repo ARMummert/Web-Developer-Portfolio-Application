@@ -1,5 +1,3 @@
-
-
 body,
 html {
     margin: 0;
@@ -7,6 +5,7 @@ html {
     box-sizing: border-box;
     list-style: none;
     width: 100%;
+    height: 100%;
     font-size: 14px;
     color:#00FFF0;
     font-weight: normal; 
@@ -80,6 +79,17 @@ h2 {
     color: #00FFF0;
 }
 
+p {
+    margin-top: 0px;
+    margin-left: 252px;
+    margin-right: 252px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #00FFF0;
+
+}
 .welcome {
     
     display: flex;
@@ -87,6 +97,15 @@ h2 {
     align-items: left;
     margin-top: 150px;
     margin-left: 252px;
+}
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 150px;
+    margin-left: 252px;
+    color: white;
+    font-size: 4rem;
 }
 
 .name {
@@ -125,9 +144,128 @@ h2 {
 .form {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     font-size: 1.5rem;
     margin-top: 250px;
     margin-left: 250px;
     margin-right: 250px;
+}
+
+.contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -75px;
+    color: white;
+    font-size: 4rem;
+
+}
+
+.contact-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0px;
+    font-size: 1.5rem;
+}
+
+#contact-name {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.5rem;
+    margin-top: 25px;
+    margin-left: -350px;
+}
+#contact-message {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.5rem;
+    margin-top: -150px;
+    margin-left: 350px;
+
+}
+.name-box {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 250px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.email-box {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    width: 250px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.message-box {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    width: 250px;
+    height: 110px;
+    font-size: 1.5rem;
+    margin-top: 10px;
+    
+}
+
+button {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 150px;
+    height: 30px;
+    background-color: #00FFF0;
+    color: #000212;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out;
+
+}
+.contact-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    width: 150px;
+    height: 30px;
+    background-color: #00FFF0;
+    color: #000212;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+
+}
+
+footer {
+    background-color: #000212;
+    color: #00FFF0;
+    width: 100%;
+    height: 10%;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
 }

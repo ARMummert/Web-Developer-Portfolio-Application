@@ -41,8 +41,8 @@ class ContactViewSet(viewsets.ModelViewSet):
             serializer = ContactSerializer(data=request.data)
             if serializer.is_valid():
                 serializer.save()
-                subject = "Contact Form Submission From " + serializer.data['first_name'] + " " + serializer.data['last_name']
-                body = f"First Name: {serializer.data['first_name']}\nLast Name: {serializer.data['last_name']}\nEmail: {serializer.data['email']}\nMessage: {serializer.data['message']}"
+                subject = "Contact Form Submission From " + serializer.data['name'] + " (" + serializer.data['email'] + ")"
+                body = f"Name: {serializer.data['name']}\nEmail: {serializer.data['email']}\nMessage: {serializer.data['message']}"
                 try:
                     send_mail(subject, body, 'armummert4@gmail.com', ['armummert4@gmail.com'])
                     return Response({'message': 'Form submitted successfully!'}, status=status.HTTP_201_CREATED)
