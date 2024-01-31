@@ -5,7 +5,7 @@ class Project(models.Model):
     description = models.CharField(max_length=250)
     github = models.URLField(blank=True)
     demo = models.URLField(blank=True)
-    image = models.ImageField(upload_to='portfolio/images/')
+    image = models.ImageField(upload_to='media/', null=True, blank=True)
     # show set to True by default, so that the project is visible on the portfolio page
     show = models.BooleanField(default=True)
 

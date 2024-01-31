@@ -24,21 +24,32 @@ const Projects = () => {
   }, []); 
   
   return (
-    <div className='data'>
-      <h1 className='welcome'>Projects Page</h1>
+    <div>
+      <h1 className='project-page'>Featured Project</h1>
       <ul>
         {projectsData.map(project => (
-          <li key={project.id}>
-            <h2>{project.title}</h2>
-            <p>{project.description}</p>
-            <p>{project.github}</p>
-            <p>{project.demo}</p>
-            <p>{project.image}</p>
+          <li className='proj-id' key={project.id}>
+            <h1 className='proj-title'>{project.title}</h1>
+            <img className='featured-img' src={project.image} alt={project.title} />
+            <p className='proj-desc'>
+              {project.description}<br /><hr />
+              <span className='git-link'>    
+                <a className='repo-link' href={project.github} target="_blank" rel="noopener noreferrer" title={`GitHub: ${project.title}`}>
+                  Pettiquette GitHub Repo
+                </a>
+              </span>
+              <span className='git-link'>
+                <a className='repo-link' href={project.demo} target="_blank" rel="noopener noreferrer" title={`Demo: ${project.title}`}>
+                  View Demo
+                </a>
+              </span><br />
+              <span className='prog-lang'>DJANGO PYTHON JAVASCRIPT RABBITMQ DOCKER POSTGRESQL</span>
+            </p>
           </li>
         ))}
       </ul>
     </div>
-  );
+  );  
 };
 
 export default Projects;
