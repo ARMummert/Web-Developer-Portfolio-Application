@@ -6,12 +6,24 @@ class Project(models.Model):
     github = models.URLField(blank=True)
     demo = models.URLField(blank=True)
     image = models.ImageField(upload_to='media/', null=True, blank=True)
+    proj_lang = models.CharField(max_length=100, null=True, blank=True)
     # show set to True by default, so that the project is visible on the portfolio page
     show = models.BooleanField(default=True)
 
     def __str__(self):
         return self.title
 
+class OtherProject(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.CharField(max_length=250)
+    proj_lang = models.CharField(max_length=100, null=True, blank=True)
+    github = models.URLField(blank=True)
+    demo = models.URLField(blank=True)
+    # show set to True by default, so that the project is visible on the portfolio page
+    show = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.title
 class Programming_Experience(models.Model):
     name = models.CharField(max_length=100)
     proficiency_level = [('Beginner', 'Beginner'), ('Intermediate', 'Intermediate'), ('Advanced', 'Advanced')]

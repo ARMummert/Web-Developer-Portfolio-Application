@@ -143,6 +143,16 @@ a {
     color: #FF4742;
     font-size: 2.5rem;
 }
+.other-project-page {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 120px;
+    margin-left: 183px;
+    color: #FF4742;
+    font-size: 2.5rem;
+
+}
 
 .proj-id {
     display: flex;
@@ -152,6 +162,16 @@ a {
     margin-bottom: 75px;
     font-size: 1.5rem;
 }
+
+.other-proj-id {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+}
+
 .proj-desc {
     display: flex;
     flex-direction: column;
@@ -167,7 +187,22 @@ a {
     background-color: #FF4742;
     
 }
-
+.other-proj-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px;
+    margin-left: -8px;
+    padding: 25px;
+    width: 305px;
+    height: 200px;
+    line-height: 25px;
+    font-size: 16px;
+    color: #000212;
+    background-color: #FF4742;
+    
+}
 .proj-desc:hover
  {
    background-color: #000212;
@@ -177,7 +212,15 @@ a {
    transition: all 0.5s ease-in-out ;
    border: 1px solid #FF4742;
 }
-
+.other-proj-desc:hover
+ {
+   background-color: #000212;
+   color: white;
+   font-size: 16px;
+   transform: scale(1.3);
+   transition: all 0.5s ease-in-out ;
+   border: 1px solid #FF4742;
+}
 .proj-title {
     display: flex;
     flex-direction: column;
@@ -189,8 +232,8 @@ a {
     text-decoration: uppercase;
 }
 .prog-lang {
-    font-size: 8px;
-    margin-top: 15px;
+    font-size: 10px;
+    margin-top: 25px;
     align-self: center;
     text-decoration: uppercase;
     letter-spacing: 1px;
@@ -210,9 +253,19 @@ a {
    transform: scale(1.3);
    transition: all 0.5s ease-in-out;
 }
+
 .git-link {
     margin-top: 5px;
 }
+
+.flex-box {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
 hr {
     border: 1px solid #ccc; 
     margin: 10px 0; 
