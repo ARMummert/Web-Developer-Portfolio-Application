@@ -81,3 +81,11 @@ class Contact(models.Model):
     def __str__(self):
         return self.name
 
+class Video(models.Model):
+    title = models.CharField(max_length=100)
+    description = models.CharField(max_length=250)
+    video = models.FileField(upload_to='media/', null=True, blank=True)
+    show = models.BooleanField(default=True)
+
+    def __str__(self):
+        return self.title

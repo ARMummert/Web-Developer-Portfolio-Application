@@ -180,7 +180,7 @@ a {
     margin-left: 495px;
     padding: 25px;
     width: 475px;
-    height: 235px;
+    height: 260px;
     line-height: 25px;
     font-size: 16px;
     color: #000212;
@@ -203,6 +203,7 @@ a {
     background-color: #FF4742;
     
 }
+
 .proj-desc:hover
  {
    background-color: #000212;
@@ -212,6 +213,7 @@ a {
    transition: all 0.5s ease-in-out ;
    border: 1px solid #FF4742;
 }
+
 .other-proj-desc:hover
  {
    background-color: #000212;
@@ -221,6 +223,7 @@ a {
    transition: all 0.5s ease-in-out ;
    border: 1px solid #FF4742;
 }
+
 .proj-title {
     display: flex;
     flex-direction: column;
@@ -231,6 +234,7 @@ a {
     margin-bottom: 10px;
     text-decoration: uppercase;
 }
+
 .prog-lang {
     font-size: 10px;
     margin-top: 25px;
@@ -373,6 +377,35 @@ hr {
     
 }
 
+.video-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 3.5rem;
+    margin-top: 150px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.video-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.dog-training-video {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: -100px;
+    margin-left: 335px;
+    margin-right: 0px;
+
+}
 /* Button CSS */
 .button-24-contact {
     display: flex;

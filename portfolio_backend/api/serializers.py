@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact
+from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact, Video
 from rest_framework import serializers
 from rest_framework.response import Response
 from rest_framework import status
@@ -44,3 +44,7 @@ class ContactSerializer(serializers.ModelSerializer):
         model = Contact
         fields = '__all__'
 
+class VideoSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Video
+        fields = '__all__'

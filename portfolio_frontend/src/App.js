@@ -7,6 +7,7 @@ import About from './components/about.js'
 import Projects from './components/projects.js'
 import Experience from './components/experience.js'
 import Contact from './components/contact.js'
+import DogTrainingDemo from './components/dogtrainingdemo.js'
 import './components/css/style.css';
 
 
@@ -22,6 +23,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
+          <Route path="/dogtrainingdemo" element={<DogTrainingDemo />} />
         </Routes>
       </div>
     </Router>
