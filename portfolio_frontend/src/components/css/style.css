@@ -1,17 +1,13 @@
 body,
 html {
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
-    width: 100%;
-    height: 100%;
     font-size: 12px;
     color:#00FFF0;
     font-weight: normal; 
     font-family: 'Montserrat', sans-serif;
     background-color: #000212;
-    background-size: auto;
 }
 
 header {
@@ -42,7 +38,6 @@ header {
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
-   
 }
 
 .nav-links {
@@ -76,7 +71,7 @@ img {
     margin-top: 10px;
     margin-left: -4px;
     width: 50%;
-    height: 350px;
+    height: 80%;
     border: 2px solid #FF4742;
     box-sizing: border-box;
 }
@@ -120,7 +115,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-top: 120px;
+    margin-top: 180px;
     margin-left: 252px;
 }
 
@@ -196,7 +191,7 @@ a {
     margin-left: -8px;
     padding: 25px;
     width: 305px;
-    height: 200px;
+    height: 225px;
     line-height: 25px;
     font-size: 16px;
     color: #000212;
@@ -382,7 +377,7 @@ hr {
     flex-direction: column;
     align-items: center;
     font-size: 3.5rem;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -392,20 +387,16 @@ hr {
     flex-direction: column;
     align-items: center;
     font-size: 1.5rem;
-    margin-top: 50px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
-.dog-training-video {
+.video-container {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
-    margin-top: -100px;
-    margin-left: 335px;
-    margin-right: 0px;
-
+    align-items: center;
+    margin-bottom: 100px;
 }
+
 /* Button CSS */
 .button-24-contact {
     display: flex;
@@ -450,6 +441,7 @@ hr {
     display: flex;
     flex-direction: row;
     margin-top: 10px;
+    margin-left: -25px;
     background: #FF4742;
     border: 1px solid #FF4742;
     border-radius: 6px;
@@ -489,6 +481,7 @@ hr {
     display: flex;
     flex-direction: row;
     margin-top: 20px;
+    margin-left: -25px;
     background: #FF4742;
     border: 1px solid #FF4742;
     border-radius: 6px;
@@ -525,17 +518,67 @@ hr {
 }
 
 footer {
-    background-color: #000212;
+    
     color: #00FFF0;
-    width: 100%;
+    width: 10%;
     height: 10%;
+    margin-bottom: 20px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    margin-left: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: left;
     position: fixed;
     bottom: 0;
+    z-index: 1;
+    writing-mode: vertical-rl; 
+    transform: rotate(180deg); 
+    white-space: nowrap; 
 }
+
+.footer-text {
+    margin-left: 30px;
+}
+
+.note-taking-app {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+    margin-top: 120px;
+    
+}
+
+.slideshow-container {
+    width: 65%;
+    height: 70%;
+    margin-left: 250px;
+}
+
+.slideshow {
+    border: 2px solid #FF4742;
+    background-color: #FF4742;
+    
+}
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #FF4742;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1;
+  }
+  
+  .prev {
+    left: 18px;
+  }
+  
+  .next {
+    right: -20px;
+  }
+  

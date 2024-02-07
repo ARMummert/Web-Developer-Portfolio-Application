@@ -8,7 +8,7 @@ class Project(models.Model):
     image = models.ImageField(upload_to='media/', null=True, blank=True)
     proj_lang = models.CharField(max_length=100, null=True, blank=True)
     # show set to True by default, so that the project is visible on the portfolio page
-    show = models.BooleanField(default=True)
+    show = models.BooleanField(default=False)
 
     def __str__(self):
         return self.title

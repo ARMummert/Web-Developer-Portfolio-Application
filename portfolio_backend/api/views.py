@@ -48,7 +48,7 @@ class ContactViewSet(viewsets.ModelViewSet):
                 subject = "Contact Form Submission From " + serializer.data['name'] + " (" + serializer.data['email'] + ")"
                 body = f"Name: {serializer.data['name']}\nEmail: {serializer.data['email']}\nMessage: {serializer.data['message']}"
                 try:
-                    send_mail(subject, body, 'armummert4@gmail.com', ['armummert4@gmail.com'])
+                    send_mail((subject, body, serializer, ['armummert4@gmail.com']))
                     return Response({'message': 'Form submitted successfully!'}, status=status.HTTP_201_CREATED)
                 except Exception as e:
                     return Response({'error': f'Error sending email: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)

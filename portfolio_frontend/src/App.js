@@ -9,7 +9,7 @@ import Experience from './components/experience.js'
 import Contact from './components/contact.js'
 import DogTrainingDemo from './components/dogtrainingdemo.js'
 import './components/css/style.css';
-
+import NoteTakingApp from './components/notetakingapp.js';
 
 function App() {
   return (
@@ -24,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/" element={<Home />} />
           <Route path="/dogtrainingdemo" element={<DogTrainingDemo />} />
+          <Route path="/notetakingapp" element={<NoteTakingApp />} />
         </Routes>
       </div>
     </Router>
