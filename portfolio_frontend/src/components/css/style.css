@@ -1,5 +1,8 @@
 body,
 html {
+    min-height: 100vh;
+    min-width: 100vw;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
@@ -132,21 +135,24 @@ a {
 .project-page {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: center;
     margin-top: 120px;
-    margin-left: 183px;
-    color: #FF4742;
-    font-size: 2.5rem;
+    margin-left: -840px;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
+
 .other-project-page {
     display: flex;
     flex-direction: column;
     align-items: left;
-    margin-top: 120px;
-    margin-left: 183px;
-    color: #FF4742;
-    font-size: 2.5rem;
-
+    margin-top: -60px;
+    margin-bottom: 50px;
+    margin-left: 180px;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
 }
 
 .proj-id {
@@ -165,6 +171,16 @@ a {
     margin-left: 50px;
     margin-bottom: 50px;
     font-size: 1.5rem;
+}
+
+.experience-id {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 150px;
+    margin-bottom: 75px;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .proj-desc {
@@ -265,14 +281,131 @@ a {
     justify-content: center;
 }
 
+.featured-projects {
+    display: flex;
+    flex-direction: row;
+    justify-self: center;
+    margin-left: 60px;
+    margin-right: 0px;
+    margin-top: -40px;
+    color: white;
+    font-size: 4rem;
+}
+
 hr {
     border: 1px solid #ccc; 
     margin: 10px 0; 
     width: 100%;
   }
 
+.horizontal-line {
+    border: 1px solid #ccc; 
+    margin-left: 252px; 
+    width: 75%;
+  }
+
+.horizontal-line2 {
+    border: 1px solid #ccc; 
+    margin-left: 182px; 
+    margin-top: -40px;
+    margin-bottom: 40px;
+    width: 75%;
+  }
+
+.horizontal-line3 {
+    border: 1px solid #ccc; 
+    margin-left: 182px; 
+    margin-top: 0px;
+    margin-bottom: 40px;
+    width: 75%;
+  }
+
+.vertical-line {
+    border-left: 1px solid white;
+    align-items: baseline;
+    height: 100px;
+    margin-left: 350px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+  }
+  
+  .vertical-line2 {
+    border-left: 1px solid white;
+    align-items: baseline;
+    height: 100px;
+    margin-left: 200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+  }
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 120px;
+    margin-left: 182px;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.experience-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+#work-exp {
+    display: flex;  
+    flex-direction: column;
+    align-items: left;
+    margin-top: -220px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: white;
+    font-size: 1.3rem;
+}
+
+#work-exp2 {
+    display: flex;  
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: white;
+    font-size: 1.3rem;
+}
+
+#work-exp3 {
+    display: flex;  
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: white;
+    font-size: 1.3rem;
+}
+
+#work-exp4 {
+    display: flex;  
+    flex-direction: column;
+    align-items: left;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: white;
+    font-size: 1.3rem;
+}
+
 .name {
-    
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -283,7 +416,6 @@ hr {
 }
 
 .message {
-    
     display: flex;
     flex-direction: row-reverse;
     align-items: left;
@@ -330,6 +462,7 @@ hr {
     margin-top: 25px;
     margin-left: -350px;
 }
+
 #contact-message {
     display: flex;
     flex-direction: column;
@@ -339,6 +472,7 @@ hr {
     margin-left: 350px;
 
 }
+
 .name-box {
     display: flex;
     flex-direction: row;
@@ -582,3 +716,35 @@ footer {
     right: -20px;
   }
   
+#data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-size: 1.5rem;
+    text-decoration: none;
+    text-transform: uppercase;    
+    color: white;
+    font-size: 1.5rem;
+  }
+
+.job-title {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.job-year {
+    display: flex;
+    flex-direction: column;
+    align-items: left; 
+    font-size: 1.5rem;
+    color: white;
+    font-size: 1.3rem;
+}

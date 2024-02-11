@@ -44,22 +44,26 @@ const Experience = () => {
   }, []); 
   return (
     <div>
-      <h1 className='welcome'>Experience Page</h1>
-      <ul className='data'>
+      <h1 className='experience'>Experience</h1>
+      <div className='horizontal-line3'></div>
+      <h2 className='experience-page' >Work Experience</h2>
+      <ul id='data' className='vertical-line'>
         {experienceData.map(experience => (
-          <li key={experience.id}>
-            <h2>{experience.name}</h2>
-            <p>{experience.company}</p>
-            <p>{experience.location}</p>
-            <p>{experience.start_date}</p>
-            <p>{experience.description}</p>
-            <p>{experience.programming_experience}</p>
+          <li className='proj-title' key={experience.id}>
+            <h2 className='job-title'>{experience.name}</h2>
+            <h3 className='job-year'>2009-2016</h3>
+            <div className='vertical-line2'></div>
+            <p id='work-exp'>{experience.company}</p>
+            <p id='work-exp2'>{experience.location}</p>
+            <p id='work-exp3'>{experience.start_date}</p>
+            <p id='work-exp4'>{experience.description}</p>
+            <p id='work-exp5'>{experience.programming_experience}</p>
           </li>
         ))}
       </ul>
-      <ul className='data'>
+      <ul id='data' className='vertical-line'>
         {programmingExperienceData.map(programmingexperience => (
-          <li key={programmingexperience.id}>
+          <li className='proj-title' key={programmingexperience.id}>
             <h2>{programmingexperience.name}</h2>
             <p>{programmingexperience.proficiency_level}</p>
             <p>{programmingexperience.proficiency}</p>
@@ -68,7 +72,7 @@ const Experience = () => {
       </ul>
       <ul className='data'>
         {certificationsData.map(certification => (
-          <li key={certification.id}>
+          <li className='proj-title'key={certification.id}>
             <h2>{certification.certificate_name}</h2>
             <p>{certification.date_received}</p>
           </li>
@@ -76,7 +80,7 @@ const Experience = () => {
       </ul>
       <ul className='data'>
         {achievementsData.map(achievements => (
-          <li key={achievements.id}>
+          <li className='proj-title' key={achievements.id}>
             <h2>{achievements.name}</h2>
             <p>{achievements.description}</p>
             <p>{achievements.date_received}</p>
@@ -85,7 +89,7 @@ const Experience = () => {
       </ul>
       <ul className='data'>
         {educationData.map(education => (
-          <li key={education.id}>
+          <li className='proj-title' key={education.id}>
             <h2>{education.degree}</h2>
             <p>{education.institution}</p>
             <p>{education.graduation_date}</p>
