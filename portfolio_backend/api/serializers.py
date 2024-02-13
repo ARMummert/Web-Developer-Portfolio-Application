@@ -1,5 +1,5 @@
 from rest_framework import serializers
-from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact, Video
+from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact, Video, Programming_Experience_Extra
 from rest_framework import serializers
 from rest_framework.response import Response
 from rest_framework import status
@@ -24,6 +24,10 @@ class Programming_ExperienceSerializer(serializers.ModelSerializer):
         model = Programming_Experience
         fields = '__all__'
 
+class Programming_Experience_ExtraSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Programming_Experience_Extra
+        fields = '__all__'
 class EducationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Education

@@ -1,6 +1,6 @@
 import React from 'react';
 import './css/style.css';
-import PortfolioLogo from './images/PortfolioLogo.png';
+import portfolio_logo_red from './images/portfolio_logo_red.png';
 import {Link} from 'react-router-dom';
 
 const Header = () => {
@@ -9,7 +9,7 @@ const Header = () => {
             
         <header>
             <div className='logo'>
-                <img src={PortfolioLogo} alt="Portfolio Logo"/>
+                <img src={portfolio_logo_red} alt="Portfolio Logo Red"/>
             </div>
             <nav >
                 <ul>
@@ -31,7 +31,7 @@ const Header = () => {
                 </ul>
             </nav>
         </header>
-        <footer className='footer-text'>&copy; 2024 Amy Mummert. All Rights Reserved.</footer>
+        <footer id='footer-text'>&copy; 2024 Amy Mummert. All Rights Reserved <div className='footer-line'>  </div></footer>
         
         </div>
        

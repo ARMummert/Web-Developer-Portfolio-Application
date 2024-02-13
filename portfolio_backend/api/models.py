@@ -26,13 +26,16 @@ class OtherProject(models.Model):
         return self.title
 class Programming_Experience(models.Model):
     name = models.CharField(max_length=100)
-    proficiency_level = [('Beginner', 'Beginner'), ('Intermediate', 'Intermediate'), ('Advanced', 'Advanced')]
-    proficiency = models.CharField(max_length=12, choices=proficiency_level, default='Beginner')
     show = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
+class Programming_Experience_Extra(models.Model):
+    name = models.CharField(max_length=100)
+    show = models.BooleanField(default=True)
 
+    def __str__(self):
+        return self.name
 class Experience(models.Model):
     name = models.CharField(max_length=100)
     company = models.CharField(max_length=100)
@@ -40,12 +43,10 @@ class Experience(models.Model):
     start_date = models.DateField()
     end_date = models.DateField(null = True, blank=True)
     description = models.TextField()
-    Programming_Experience = models.ManyToManyField(Programming_Experience)
     show = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
-
 class Education(models.Model):
     degree = models.CharField(max_length=100)
     institution = models.CharField(max_length=100)

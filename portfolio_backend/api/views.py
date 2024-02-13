@@ -3,8 +3,8 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
-from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact, Video
-from .serializers import ProjectSerializer, OtherProjectSerializer, ExperienceSerializer, Programming_ExperienceSerializer, EducationSerializer, AchievementsSerializer, CertificationsSerializer, ContactSerializer, VideoSerializer
+from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact, Video, Programming_Experience_Extra
+from .serializers import ProjectSerializer, OtherProjectSerializer, ExperienceSerializer, Programming_ExperienceSerializer, Programming_Experience_ExtraSerializer, EducationSerializer, AchievementsSerializer, CertificationsSerializer, ContactSerializer, VideoSerializer
 from django.core.mail import send_mail
 
 class ProjectViewSet(viewsets.ModelViewSet):
@@ -23,6 +23,9 @@ class Programming_ExperienceViewSet(viewsets.ModelViewSet):
     queryset = Programming_Experience.objects.all()
     serializer_class = Programming_ExperienceSerializer
 
+class Programming_Experience_ExtraViewSet(viewsets.ModelViewSet):
+    queryset = Programming_Experience_Extra.objects.all()
+    serializer_class = Programming_Experience_ExtraSerializer
 class EducationViewSet(viewsets.ModelViewSet):
     queryset = Education.objects.all()
     serializer_class = EducationSerializer
