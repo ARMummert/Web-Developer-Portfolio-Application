@@ -7,7 +7,7 @@ html {
     box-sizing: border-box;
     list-style: none;
     font-size: 12px;
-    color:#00FFF0;
+    color:white;
     font-weight: normal; 
     font-family: 'Montserrat', sans-serif;
     background-color: #000212;
@@ -19,7 +19,7 @@ header {
     width: 100%;
     height: 12%;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Montserrat, sans-serif;
     font-weight: 300;
     padding: 0;
     margin: 0;
@@ -87,20 +87,22 @@ h1 {
 
 h2 {
     margin-top: 100px;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 300;
-    color: #00FFF0;
+    color: #FF4742;
 }
 
 p {
     margin-top: 0px;
     margin-left: 252px;
     margin-right: 252px;
-    display: flex;
-    flex-wrap: wrap;
+    display: flex;   
+    flex-direction: row;
+    align-items: left;
+    justify-self: left;
     font-size: 1.5rem;
     font-weight: 300;
-    color: #00FFF0;
+    color: #FF4742;
 }
 
 a {
@@ -115,10 +117,11 @@ a {
 .welcome {
     
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     margin-top: 180px;
-    margin-left: 252px;
+    margin-left: 250px;
+    
 }
 
 .about-page {
@@ -126,7 +129,8 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 120px;
-    margin-left: -975px;
+    margin-left: -833px;
+    padding: 25px;
     color: white;
     font-size: 2rem;
     text-transform: uppercase;
@@ -137,8 +141,8 @@ a {
     flex-direction: column;
     align-items: center;
     margin-top: 120px;
-    margin-left: -840px;
-    color: white;
+    margin-left: -715px;
+    color: #FF4742;
     font-size: 2rem;
     text-transform: uppercase;
 }
@@ -148,9 +152,9 @@ a {
     flex-direction: column;
     align-items: left;
     margin-top: -60px;
-    margin-bottom: 50px;
-    margin-left: 180px;
-    color: white;
+    margin-bottom: 40px;
+    margin-left: 185px;
+    color: #FF4742;
     font-size: 2rem;
     text-transform: uppercase;
 }
@@ -173,16 +177,6 @@ a {
     font-size: 1.5rem;
 }
 
-.experience-id {
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-left: 150px;
-    margin-bottom: 75px;
-    font-size: 1.5rem;
-    text-decoration: none;
-}
-
 .proj-desc {
     display: flex;
     flex-direction: column;
@@ -198,6 +192,7 @@ a {
     background-color: #FF4742;
     
 }
+
 .other-proj-desc {
     display: flex;
     flex-direction: column;
@@ -239,7 +234,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: left;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     margin-top: -5px;
     margin-left: -5px;
     text-decoration: uppercase;
@@ -262,6 +257,16 @@ a {
     font-size: 1.3rem;
     margin-top: -100px;
     text-decoration: uppercase;
+}
+
+.experience-id {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    margin-left: 150px;
+    margin-bottom: 75px;
+    font-size: 1.5rem;
+    text-decoration: none;
 }
 
 .repo-link {
@@ -380,15 +385,6 @@ hr {
     padding: 20px;
   }
 
-.vertical-line2 {
-    border-left: 1px solid white;
-    align-items: baseline;
-    height: 250px;
-    margin-top: 35px;
-    margin-left: -965px;
-    padding: 20px;
-  }
-
 .vertical-line3 {
     border-left: 1px solid white;
     align-items: baseline;
@@ -430,7 +426,8 @@ hr {
     display: flex;  
     flex-direction: column;
     align-items: left;
-    font-size: 1.3rem;
+    margin-left: 125px;
+    font-size: 1.5rem;
     text-decoration: none;
     text-transform: uppercase;     
     color: white;
@@ -441,10 +438,11 @@ hr {
     display: flex;  
     flex-direction: column;
     align-items: left;
+    margin-left: 125px;
     text-decoration: none;
     text-transform: capitalize;   
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 #work-exp3 {
@@ -452,15 +450,16 @@ hr {
     flex-direction: column;
     margin-right: -20px;
     align-items: left;
+    margin-left: 125px;
     text-decoration: none;
     text-transform: none;    
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .name {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: left;
     color: white;
     font-size: 5rem;
@@ -470,8 +469,9 @@ hr {
 
 .message {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
     align-items: left;
+    justify-content: left;
     font-size: 2.5rem;
     margin-top: 0px;
     margin-left: 250px;
@@ -597,7 +597,7 @@ hr {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 16px;
@@ -637,7 +637,7 @@ hr {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 16px;
@@ -677,7 +677,7 @@ hr {
     color: #FFFFFF;
     cursor: pointer;
     display: inline-block;
-    font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+    font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: 800;
     line-height: 16px;
@@ -709,7 +709,7 @@ footer {
     color: #00FFF0;
     margin-bottom: 20px;
     font-size: 14px;
-    font-family: 'Roboto', sans-serif;
+    font-family: Montserrat, sans-serif;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -723,7 +723,7 @@ footer {
 }
 
 #footer-text {
-    margin-left: 10px;
+    margin-left: 20px;
     color: #FF4742;
 }
 
@@ -738,42 +738,86 @@ footer {
     flex-direction: row;
     justify-content: center;
     color: white;
-    margin-top: 120px;
-    
+    margin-top: 90px;
 }
 
+/* SlideshowComponent.css */
 .slideshow-container {
-    width: 65%;
-    height: 70%;
-    margin-left: 250px;
-}
-
-.slideshow {
-    border: 2px solid #FF4742;
-    background-color: #FF4742;
-    
-}
-  .prev, .next {
+    position: relative;
+    width: 100vw; /* Ensure slideshow container takes full width of the viewport */
+    height: 100vh; /* Ensure slideshow container takes full height of the viewport */
+  }
+  
+  .slideshow {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  
+  .slideshow img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev, .next, .fullscreen {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #FF4742;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
-    outline: none;
     cursor: pointer;
     padding: 10px;
     z-index: 1;
   }
   
+  .prev, .next {
+    font-size: 20px;
+  }
+  
   .prev {
-    left: 18px;
+    left: 10px;
   }
   
   .next {
-    right: -20px;
+    right: 10px;
   }
   
+  .fullscreen {
+    right: 10px;
+    bottom: 10px;
+    align-items: right;
+    margin-right: 900px;
+  }
+  
+  .fullscreen:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Ensure slideshow takes full width and height of the screen in fullscreen mode */
+  .slideshow:-webkit-full-screen {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .slideshow:-moz-full-screen {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .slideshow:-ms-fullscreen {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+  .slideshow:fullscreen {
+    width: 100vw;
+    height: 100vh;
+  }
+  
+    
 #data {
     display: flex;
     flex-direction: column;
@@ -785,10 +829,9 @@ footer {
     text-decoration: none;
     text-transform: uppercase;    
     color: white;
-    font-size: 1.5rem;
   }
 
-  #data2 {
+#data2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -804,8 +847,9 @@ footer {
 
 .job-title {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 0px;
+    margin-left: -100px;
     align-items: left; 
     font-size: 1.5rem;
     color: white;
@@ -816,9 +860,10 @@ footer {
     flex-direction: column;
     text-transform: capitalize;
     margin-top: -40px;
+    margin-left: 125px;
     align-items: left; 
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .job-year2 {
@@ -826,28 +871,19 @@ footer {
     flex-direction: column;
     text-transform: capitalize;
     align-items: left; 
+    margin-left: 125px;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
 }
 
 .prog-exp {
     display: flex;
     flex-direction: column;
-    align-items: left;
     font-size: 1.5rem;
-    margin-left: -710px;
-    margin-top: -290px;
+    margin-left: -860px;
     margin-bottom: 50px;
     text-decoration: none;
     text-transform: uppercase;
-}
-.prog-lang {
-    font-size: 10px;
-    margin-top: 25px;
-    align-self: center;
-    text-decoration: uppercase;
-    letter-spacing: 1px;
-    font-weight: 600;
 }
 
 .prog-lang2 {
@@ -857,12 +893,13 @@ footer {
     width: 100px;
     padding: 5px;
     margin-top: 10px;
-    margin-left: -450px;
+    margin-left: -307px;
     font-size: 1.3rem;
     text-decoration: none;
     text-transform: uppercase;
     background-color: white;
-    color: #FF4742;
+    color: #000212;
+    font-weight: 600;
     border-radius: 5px;
 }
 
@@ -873,12 +910,13 @@ footer {
     align-items: center;
     padding: 5px;
     margin-top: 5px;
-    margin-left: -450px;
+    margin-left: -250px;
     font-size: 1.3rem;
     text-decoration: none;
     text-transform: uppercase;
     background-color: white;
-    color: #FF4742;
+    color: #000212;
+    font-weight: 600;
     border-radius: 5px;
 }
 
@@ -887,8 +925,8 @@ footer {
     flex-direction: column;
     align-items: left;
     font-size: 1.5rem;
-    margin-top: -290px;
-    margin-left: -825px;
+    margin-top: -25px;
+    margin-left: -982px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -897,40 +935,31 @@ footer {
 .cert {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     font-size: 1.5rem;
-    margin-top: 0px;
-    padding: 50px;
+    margin-top: 25px;
     text-decoration: none;
     text-transform: capitalize;
-    color: white;
+    color:  #FFFFFF;
 }
 
 .cert2 {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: left;
     font-size: 1.5rem;
-    margin-left: 55px;
-    margin-top: -50px;
-    padding: 50px;
+    margin-top: 25px;
+    margin-left: -180px;
     text-decoration: none;
     text-transform: capitalize;
-    color: white;
+    color:  #FFFFFF;
 }
 
 #cert-box {
     display: flex;
-    flex-direction: column;
-    align-items: left;
+    flex-direction: row;
     text-decoration: none;
-    color: white;
-    background-color: #FF4742;
-    border-radius: 5px;
-    width: 300px;
-    height: 200px;
-    margin-top: 20px;
-    margin-left: -625px;
+    margin-left: -375px;
 }
 
 .achieve {
@@ -938,8 +967,7 @@ footer {
     flex-direction: column;
     align-items: left;
     font-size: 1.5rem;
-    margin-top: -300px;
-    margin-left: 225px;
+    margin-left: 137px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
@@ -949,11 +977,64 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 380px;
+    height: 100px;
     font-size: 1.5rem;
     margin-top: 20px;
+    margin-left: 373px;
     text-decoration: none;
     text-transform: capitalize;
     color: white;
+    font-weight: 600;
+}
+
+.achievements {
+    
+    font-size: 1.5rem;
+    margin-left: 380px;
+    width: 500px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    
+}
+
+.edu {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 373px;
+    padding-top: 10px;
+    width: 500px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.edu2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-left: 373px;
+    padding-top: 10px;
+    width: 500px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.edu3 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-left: 373px;
+    margin-bottom: 50px;
+    padding-top: 10px;
+    width: 500px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #FFFFFF;
 }
 
 .education {
@@ -961,9 +1042,87 @@ footer {
     flex-direction: column;
     align-items: left;
     font-size: 1.5rem;
-    margin-top: -10px;
-    margin-left: 225px;
+    margin-left: 137px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
 }
+
+/*  ANIMATIONS */
+
+.container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+  }
+  
+.blue-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000212;
+    z-index: 1;
+  }
+  
+.logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: logoAnimation 2s forwards;
+  }
+  
+.logo {
+    width: 100px; 
+    height: auto;
+  }
+  
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    text-align: left;
+    opacity: 0;
+    animation: revealContent 4s forwards;
+  }
+  
+@keyframes logoAnimation {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(0.5);
+      opacity: 0;
+    }
+  }
+  
+@keyframes revealContent {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+@keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+#animated-text {
+    animation: slideIn 2s ease forwards;
+  }

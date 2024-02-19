@@ -51,23 +51,20 @@ const Experience = () => {
   return (
     <div>
       <h1 className='experience'>Experience</h1>
-      <div className='horizontal-line3'></div>
-      <ul id='data' className='vertical-line'>
+      <ul id='data'>
         {experienceData.map(experience => (
           <li className='proj-title' key={experience.id}>
             <h3 className='job-title'>{experience.name}</h3>
-            <p className='job-year'>Start Date: {experience.start_date}</p>
-            <p className='job-year2'>End Date: {experience.end_date}</p>
+            <p className='job-year'>Start Date - {experience.start_date}</p>
+            <p className='job-year2'>End Date - {experience.end_date}</p>
             <p id='work-exp'>{experience.company}</p>
             <p id='work-exp2'>{experience.location}</p>
             <p id='work-exp3'>{experience.description}</p>
-            <div className='horizontal-line4'></div>
           </li>
           
         ))}
       </ul>
       <ul id='data' >
-        <div className='vertical-line2'></div>
       <h3 className='prog-exp'>Programming Experience</h3>
         {programmingExperienceData.map(programmingexperience => (
           <li className='proj-title'key={programmingexperience.id}>
@@ -83,37 +80,36 @@ const Experience = () => {
           </li>
         ))}
       </ul>
-      <div className='horizontal-line5'></div>
       <ul id='data'>
-      <div className='vertical-line3'></div>
         <h3 className='cert-title'>Certifications</h3>
         {certificationsData.map(certification => (
           <li id='cert-box' key={certification.id}>
-            <h2 className='cert'>{certification.certificate_name}</h2>
+            <p className='cert'>{certification.certificate_name}</p>
             <p className='cert2'>{certification.date_received}</p>
           </li>
         ))}
-      </ul>
-      <div className='horizontal-line6'></div>
+      </ul> 
       <ul className='data'>
-      <div className='vertical-line4'></div>
       <h3 className='achieve'>Achievements</h3>
         {achievementsData.map(achievements => (
           <li className='proj-title' key={achievements.id}>
-            <h2 id='achievements'>{achievements.name}</h2>
-            <p id='achievements'>{achievements.description}</p>
-            <p id='achievements'>{achievements.date_received}</p>
+            <div id='achievements'>
+            <p className='achievements'>{achievements.name}</p>
+            <p className='achievements'>{achievements.description}</p>
+            <p className='achievements'>{achievements.date_received}</p>
+            </div>
           </li>
         ))}
       </ul>
-      <div className='horizontal-line7'></div>
       <ul className='data'>
       <h3 className='education'>Education</h3>
         {educationData.map(education => (
           <li className='proj-title' key={education.id}>
-            <h2 id='achievements'>{education.degree}</h2>
-            <p id='achievements'>{education.institution}</p>
-            <p id='achievements'>{education.graduation_date}</p>
+            <div>
+            <p className='edu'>{education.degree}</p>
+            <p className='edu2'>{education.institution}</p>
+            <p className='edu3'>{education.graduation_date}</p>
+            </div>
           </li>
         ))}
       </ul>

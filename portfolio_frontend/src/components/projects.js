@@ -48,7 +48,6 @@ const Projects = () => {
   return (
     <div>
       <h1 className='project-page'>Featured Projects</h1>
-      <div className='horizontal-line3'></div>
       <div className='featured-projects'>
       <ul>
         {projectsData.map(project => (
@@ -75,7 +74,6 @@ const Projects = () => {
       </ul>
       </div>
       <h1 className='other-project-page'>Check Out My Other Projects!</h1>
-      <div className='horizontal-line2'></div>
       <ul className='flex-box'>
         {OtherProjectData.map(OtherProject => (
           <li className='other-proj-id' key={OtherProject.id}>
