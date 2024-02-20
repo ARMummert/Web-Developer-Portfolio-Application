@@ -76,6 +76,7 @@ img {
     height: 80%;
     border: 2px solid #FF4742;
     box-sizing: border-box;
+    border-radius: 5px;
 }
 
 h1 {
@@ -190,6 +191,7 @@ a {
     font-size: 16px;
     color: #000212;
     background-color: #FF4742;
+    border-radius: 5px;
     
 }
 
@@ -218,6 +220,7 @@ a {
    transform: scale(1.3);
    transition: all 0.5s ease-in-out ;
    border: 1px solid #FF4742;
+   border-radius: 5px;
 }
 
 .other-proj-desc:hover
@@ -741,11 +744,11 @@ footer {
     margin-top: 90px;
 }
 
-/* SlideshowComponent.css */
+/* Slideshow */
 .slideshow-container {
     position: relative;
-    width: 100vw; /* Ensure slideshow container takes full width of the viewport */
-    height: 100vh; /* Ensure slideshow container takes full height of the viewport */
+    width: 100vw; 
+    height: 100vh; 
   }
   
   .slideshow {
@@ -795,8 +798,6 @@ footer {
   .fullscreen:hover {
     background-color: rgba(0, 0, 0, 0.7);
   }
-  
-  /* Ensure slideshow takes full width and height of the screen in fullscreen mode */
   .slideshow:-webkit-full-screen {
     width: 100vw;
     height: 100vh;
@@ -816,8 +817,7 @@ footer {
     width: 100vw;
     height: 100vh;
   }
-  
-    
+
 #data {
     display: flex;
     flex-direction: column;
@@ -886,6 +886,24 @@ footer {
     text-transform: uppercase;
 }
 
+.prog-lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    font-size: 1.0rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+}
+
+.prog-lang:hover {
+   color: white;
+
+}
+
 .prog-lang2 {
     display: flex;
     flex-direction: column;
@@ -938,9 +956,11 @@ footer {
     align-items: left;
     font-size: 1.5rem;
     margin-top: 25px;
+    margin-left: 352px;
     text-decoration: none;
     text-transform: capitalize;
     color:  #FFFFFF;
+    font-weight: 600;
 }
 
 .cert2 {
@@ -953,6 +973,7 @@ footer {
     text-decoration: none;
     text-transform: capitalize;
     color:  #FFFFFF;
+    font-weight: 600;
 }
 
 #cert-box {
@@ -967,10 +988,11 @@ footer {
     flex-direction: column;
     align-items: left;
     font-size: 1.5rem;
-    margin-left: 137px;
+    margin-left: 143px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;
+    font-weight: 600;
 }
 
 #achievements {
@@ -996,20 +1018,21 @@ footer {
     text-decoration: none;
     text-transform: capitalize;
     color: white;
+    font-weight: 600;
     
 }
 
 .edu {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 1.5rem;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-left: 373px;
-    padding-top: 10px;
-    width: 500px;
+    padding-top: 5px;
     text-decoration: none;
     text-transform: capitalize;
-    color: #FFFFFF;
+    color: #000212;
+    font-weight: 600;
 }
 
 .edu2 {
@@ -1037,12 +1060,16 @@ footer {
     color: #FFFFFF;
 }
 
+#background-edu {
+    color: white;
+}
+
 .education {
     display: flex;
     flex-direction: column;
     align-items: left;
     font-size: 1.5rem;
-    margin-left: 137px;
+    margin-left: 143px;
     text-decoration: none;
     text-transform: uppercase;
     color: white;

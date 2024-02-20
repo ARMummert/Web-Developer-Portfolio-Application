@@ -85,7 +85,7 @@ const Experience = () => {
         {certificationsData.map(certification => (
           <li id='cert-box' key={certification.id}>
             <p className='cert'>{certification.certificate_name}</p>
-            <p className='cert2'>{certification.date_received}</p>
+            <p className='cert2'>Received - {certification.date_received}</p>
           </li>
         ))}
       </ul> 
@@ -105,10 +105,10 @@ const Experience = () => {
       <h3 className='education'>Education</h3>
         {educationData.map(education => (
           <li className='proj-title' key={education.id}>
-            <div>
-            <p className='edu'>{education.degree}</p>
-            <p className='edu2'>{education.institution}</p>
-            <p className='edu3'>{education.graduation_date}</p>
+            <div id='background-edu'>
+            <p id='background-edu' className='edu'>{education.degree}</p>
+            <p id='background-edu' className='edu'>{education.institution}</p>
+            <p id='background-edu' className='edu'>{education.graduation_date}</p>
             </div>
           </li>
         ))}
