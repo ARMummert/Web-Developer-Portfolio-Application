@@ -48,7 +48,7 @@ const Projects = () => {
   return (
     <div>
       <h1 className='project-page'>Featured Projects</h1>
-      <div className='featured-projects'>
+      <div>
       <ul>
         {projectsData.map(project => (
           <li className='proj-id' key={project.id}>

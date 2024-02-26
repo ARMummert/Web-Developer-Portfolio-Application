@@ -3,6 +3,7 @@ from rest_framework import viewsets, status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
+from .forms import ContactForm
 from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact, Video, Programming_Experience_Extra
 from .serializers import ProjectSerializer, OtherProjectSerializer, ExperienceSerializer, Programming_ExperienceSerializer, Programming_Experience_ExtraSerializer, EducationSerializer, AchievementsSerializer, CertificationsSerializer, ContactSerializer, VideoSerializer
 from django.core.mail import send_mail
@@ -45,17 +46,27 @@ class ContactViewSet(viewsets.ModelViewSet):
     @api_view(['POST'])
     def contact_view(request):
         if request.method == 'POST':
-            serializer = ContactSerializer(data=request.data)
-            if serializer.is_valid():
-                serializer.save()
-                subject = "Contact Form Submission From " + serializer.data['name'] + " (" + serializer.data['email'] + ")"
-                body = f"Name: {serializer.data['name']}\nEmail: {serializer.data['email']}\nMessage: {serializer.data['message']}"
-                try:
-                    send_mail((subject, body, serializer, ['armummert4@gmail.com']))
-                    return Response({'message': 'Form submitted successfully!'}, status=status.HTTP_201_CREATED)
-                except Exception as e:
-                    return Response({'error': f'Error sending email: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
-            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+            form = ContactForm(data=request.data)
+            if form.is_valid():
+                cleaned_data = form.cleaned_data
+                name = cleaned_data['name']
+                email = cleaned_data['email']
+                message = cleaned_data['message']
+                sender_email = cleaned_data['email']
+
+            try:
+                send_mail(
+                    f'Contact Form Submission From {name} ({email})',
+                    f'Name: {name}\nEmail: {email}\nMessage: {message}',
+                    sender_email,
+                    ['armummert4@gmail.com'],
+                    fail_silently=False,
+                )
+                form.save()
+                return Response({'message': 'Form submitted successfully!'}, status=status.HTTP_201_CREATED)
+            except Exception as e:
+                return Response({'error': f'Error sending email: {e}'}, status=status.HTTP_500_INTERNAL_SERVER_ERROR)
+        return Response(form.errors, status=status.HTTP_400_BAD_REQUEST)
 
 class VideoViewSet(viewsets.ModelViewSet):
     queryset = Video.objects.all()
