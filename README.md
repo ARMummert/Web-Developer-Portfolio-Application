@@ -118,7 +118,7 @@ React Frontend
 - https://getcssscan.com/css-buttons-examples
 
 # UI/UX
-![Alt Text](https://raw.githubusercontent.com/ARMummert/Web-Developer-Portfolio-Application/portfolio_frontend/src/components/images/portfolio_logo_red.png)
+
 
 
 
