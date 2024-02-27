@@ -117,3 +117,7 @@ React Frontend
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 - https://getcssscan.com/css-buttons-examples
 
+# UI/UX
+![Alt Text](/src/components/images/portfolio_logo_red.png)
+
+
