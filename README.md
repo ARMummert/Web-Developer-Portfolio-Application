@@ -92,7 +92,7 @@ Django Backend
 7. `pip manage.py makemigrations`
 8. `python manage.py migrate`
 9. `python manage.py createsuperuser` - Django Admin: http://127.0.0.1:8000/admin 
-10. `python -m pip install -r requirements.txt` - to set up your own virtual environment
+10. `python -m pip install -r portfolio_backend/requirements.txt` - to set up your own virtual environment
 11. `python manage.py runserver` 
 
 React Frontend
