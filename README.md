@@ -101,19 +101,19 @@ React Frontend
 
 # CITATIONS
 
-https://v5.reactrouter.com/web/guides/quick-start
-https://www.stackhawk.com/blog/django-cors-guide/
-https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend
-https://www.django-rest-framework.org/tutorial/2-requests-and-responses/
-https://react-hook-form.com/docs/useform/handlesubmit
-https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
-https://medium.com/@gazzaazhari/django-backend-react-frontend-basic-tutorial-6249af7964e4
-https://react.dev/learn
-https://docs.djangoproject.com/en/5.0/
-https://github.com/django/django
+- https://v5.reactrouter.com/web/guides/quick-start
+- https://www.stackhawk.com/blog/django-cors-guide/
+- https://ordinarycoders.com/blog/article/build-a-django-contact-form-with-email-backend
+- https://www.django-rest-framework.org/tutorial/2-requests-and-responses/
+- https://react-hook-form.com/docs/useform/handlesubmit
+- https://www.digitalocean.com/community/tutorials/build-a-to-do-application-using-django-and-react
+- https://medium.com/@gazzaazhari/django-backend-react-frontend-basic-tutorial-6249af7964e4
+- https://react.dev/learn
+- https://docs.djangoproject.com/en/5.0/
+- https://github.com/django/django
 
 ## CSS / Icons / Animations / Buttons
-https://www.iconfinder.com/icons/326717/more_unfold_icon  - Author: Google / Icon Finder
-https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
-https://getcssscan.com/css-buttons-examples
+- https://www.iconfinder.com/icons/326717/more_unfold_icon  - Author: Google / Icon Finder
+- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
+- https://getcssscan.com/css-buttons-examples
 
