@@ -61,6 +61,10 @@ header {
   opacity: .5;
 }
 
+.nav-links.active {
+  color: white;
+}
+
 img {
     margin: 20px;
     width: 50px;
