@@ -57,4 +57,4 @@ jobs:
         
     - name: Run Tests
       run: |
-        python portfolio_backend/manage.py test
+        python manage.py test
