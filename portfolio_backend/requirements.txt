@@ -6,7 +6,6 @@ colorama==0.4.6
 contourpy==1.2.0
 cors==1.0.1
 Django==5.0.3
-django-cors-headers==4.3.1
 django-rest-framework==0.1.0
 djangorestframework==3.14.0
 filelock==3.13.1
@@ -15,7 +14,6 @@ gevent==24.2.1
 greenlet==3.0.3
 idna==3.6
 numpy==1.26.4
-pillow==10.2.0
 pycparser==2.21
 PySocks==1.7.1
 pytz==2024.1
