@@ -28,8 +28,32 @@ jobs:
         pip install pillow
         pip install django
         pip install django-rest-framework
+        pip install contourpy
+        pip install cffi
+        pip install asgiref
+        pip install charset-normalizer
+        pip install colorama
+        pip install cors
+        pip install filelock
+        pip install future
+        pip install gevent
+        pip install greenlet
+        pip install idna
+        pip install numpy
+        pip install pycparser
+        pip install PySocks
+        pip install pytz
+        pip install requests
+        pip install requests-file
+        pip install setuptools
+        pip install sqlparse
+        pip install tldextract
+        pip install tzdata
+        pip install urllib3
+        pip install zope.event
+        pip install zope.interface
         pip install django-cors-headers
-        pip install -r requirements.txt
+       
         
     - name: Run Tests
       run: |
