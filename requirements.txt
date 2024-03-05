@@ -14,9 +14,12 @@ click-plugins==1.1.1
 click-repl==0.2.0
 colorama==0.4.6
 contour==0.2.2
+contourpy==1.2.0
 cors==1.0.1
+cycler==0.12.1
 dict-toolbox==2.3.2
 dill==0.3.6
+distlib==0.3.8
 Django==5.0.3
 django-bootstrap4==22.3
 django-cors-headers==3.14.0
