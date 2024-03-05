@@ -24,6 +24,9 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install certifi
+        pip install pillow
+        pip install django
         pip install django-rest-framework
         pip install django-cors-headers
         pip install -r requirements.txt
