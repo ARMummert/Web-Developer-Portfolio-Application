@@ -11,7 +11,7 @@ class ContactFormTest(TestCase):
             'message': 'Testing the form submission.',
         }
         form = ContactForm(data=form_data)
-        self.assertTrue(form.is_valid())
+        self.assertEqual(form.is_valid())
 
     def test_invalid_form_submission(self):
         form_data = {
