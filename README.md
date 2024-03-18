@@ -5,7 +5,7 @@ Created with Django Backend for the APIs & React Frontend for the user interface
 This project is a web developers portfolio application that showcases your work 
 to prospective employers or clients.  
 
-# FEATURES --------------------------------------------------------------------------------------------------/
+# FEATURES
 
 Home Page: A responsive animated home page that contains the developers name and a 
 description of what they do as well as a check out my work button.
