@@ -78,7 +78,9 @@ Contact Page - Backend: The background contains the contact page model and form 
 8. UI Interface
     - Figma for UI design of each web page
 9. Hosting Service
-    - Dreamhost for hosting my portfolio application (www.mummertar.xyz) 
+    - Dreamhost for hosting my portfolio application (https://www.mummertar.xyz) 
+    - Heroku for backend and frontend deployment
+
 
 # INSTALLATION
 ## Clone or download this project repository 
@@ -87,17 +89,22 @@ Django Backend
 1. cd ./portfolio_backend
 2. Create your virtual environment - `python -m venv env`
 3. Activate your virtual environment in bash - `env\Scripts\activate` (Windows) `source env/bin/activate` (MacOS)
-4. `pip install -r requirements.txt`
-5. `pip install django-cors-headers`
-7. `pip manage.py makemigrations`
-8. `python manage.py migrate`
-9. `python manage.py createsuperuser` - Django Admin: http://127.0.0.1:8000/admin 
-10. `python -m pip install -r portfolio_backend/requirements.txt` - to set up your own virtual environment
-11. `python manage.py runserver` 
+4. `pip install django`
+5. `pip install django-rest-framework`
+6. `pip install -r requirements.txt` or `pip freeze > requirements.txt`
+7. `pip install django-cors-headers`
+8. `pip manage.py makemigrations`
+9. `python manage.py migrate`
+10. `python manage.py createsuperuser` - Django Admin: http://127.0.0.1:8000/admin 
+11. `python -m pip install -r portfolio_backend/requirements.txt` - to set up your own virtual environment
+12. `python manage.py runserver` 
 
 React Frontend
-1. `npm install`
-2. `npm start` - React Front End: https://localhost:3000
+1. cd ./portfolio_frontend
+2. `npm install react`
+3. `npm install react-route-dom`
+4. `npm install axios`
+5. `npm start` - React Front End: https://localhost:3000
 
 # CITATIONS
 
@@ -117,8 +124,8 @@ React Frontend
 - https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animations/Using_CSS_animations
 - https://getcssscan.com/css-buttons-examples
 
-# UI/UX
-
+## UI/UX
+- UI/UX designed with Figma
 
 
 
