@@ -4,8 +4,8 @@ from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from rest_framework import status
 from .forms import ContactForm
-from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievements, Certifications, Contact, Video, Programming_Experience_Extra
-from .serializers import ProjectSerializer, OtherProjectSerializer, ExperienceSerializer, Programming_ExperienceSerializer, Programming_Experience_ExtraSerializer, EducationSerializer, AchievementsSerializer, CertificationsSerializer, ContactSerializer, VideoSerializer
+from .models import Project, OtherProject, Experience, Programming_Experience, Education, Achievement, Certification, Contact, Video, Programming_Experience_Extra
+from .serializers import ProjectSerializer, OtherProjectSerializer, ExperienceSerializer, Programming_ExperienceSerializer, Programming_Experience_ExtraSerializer, EducationSerializer, AchievementSerializer, CertificationSerializer, ContactSerializer, VideoSerializer
 from django.core.mail import send_mail
 
 class ProjectViewSet(viewsets.ModelViewSet):
@@ -31,13 +31,13 @@ class EducationViewSet(viewsets.ModelViewSet):
     queryset = Education.objects.all()
     serializer_class = EducationSerializer
 
-class AchievementsViewSet(viewsets.ModelViewSet):
-    queryset = Achievements.objects.all()
-    serializer_class = AchievementsSerializer
+class AchievementViewSet(viewsets.ModelViewSet):
+    queryset = Achievement.objects.all()
+    serializer_class = AchievementSerializer
 
-class CertificationsViewSet(viewsets.ModelViewSet):
-    queryset = Certifications.objects.all()
-    serializer_class = CertificationsSerializer
+class CertificationViewSet(viewsets.ModelViewSet):
+    queryset = Certification.objects.all()
+    serializer_class = CertificationSerializer
 
 class ContactViewSet(viewsets.ModelViewSet):
     queryset = Contact.objects.all()

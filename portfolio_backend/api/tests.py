@@ -1,7 +1,7 @@
 from django.test import TestCase
 from django.urls import reverse
 from .forms import ContactForm
-from .models import Project, OtherProject, Experience, Programming_Experience, Programming_Experience_Extra, Education, Achievements, Certifications, Video
+from .models import Project, OtherProject, Experience, Programming_Experience, Programming_Experience_Extra, Education, Achievement, Certification, Video
 
 class ContactFormTest(TestCase):
     def test_valid_form_submission(self):
@@ -214,9 +214,9 @@ class EducationModelTest(TestCase):
         expected_object_name = f'{education.show}'
         self.assertEqual(expected_object_name, 'True')
 
-class AchievementsModelTest(TestCase):
+class AchievementModelTest(TestCase):
     def setUp(self):
-        Achievements.objects.create(
+        Achievement.objects.create(
             name='Test Achievement',
             description='Testing Achievement Model.',
             date_received='2022-12-31',
@@ -224,45 +224,45 @@ class AchievementsModelTest(TestCase):
         )
 
     def test_achievements_name(self):
-        achievements = Achievements.objects.get(id=1)
+        achievements = Achievement.objects.get(id=1)
         expected_object_name = f'{achievements.name}'
         self.assertEqual(expected_object_name, 'Test Achievement')
 
     def test_achievements_description(self):
-        achievements = Achievements.objects.get(id=1)
+        achievements = Achievement.objects.get(id=1)
         expected_object_name = f'{achievements.description}'
         self.assertEqual(expected_object_name, 'Testing Achievement Model.')
 
     def test_achievements_date_received(self):
-        achievements = Achievements.objects.get(id=1)
+        achievements = Achievement.objects.get(id=1)
         expected_object_name = f'{achievements.date_received}'
         self.assertEqual(expected_object_name, '2022-12-31')
 
     def test_achievements_show(self):
-        achievements = Achievements.objects.get(id=1)
+        achievements = Achievement.objects.get(id=1)
         expected_object_name = f'{achievements.show}'
         self.assertEqual(expected_object_name, 'True')
 
-class CertificationsModelTest(TestCase):
+class CertificationModelTest(TestCase):
     def setUp(self):
-        Certifications.objects.create(
+        Certification.objects.create(
             certificate_name='Test Certificate',
             date_received='2022-12-31',
             show=True,
         )
 
     def test_certifications_certificate_name(self):
-        certifications = Certifications.objects.get(id=1)
+        certifications = Certification.objects.get(id=1)
         expected_object_name = f'{certifications.certificate_name}'
         self.assertEqual(expected_object_name, 'Test Certificate')
 
     def test_certifications_date_received(self):
-        certifications = Certifications.objects.get(id=1)
+        certifications = Certification.objects.get(id=1)
         expected_object_name = f'{certifications.date_received}'
         self.assertEqual(expected_object_name, '2022-12-31')
 
     def test_certifications_show(self):
-        certifications = Certifications.objects.get(id=1)
+        certifications = Certification.objects.get(id=1)
         expected_object_name = f'{certifications.show}'
         self.assertEqual(expected_object_name, 'True')
 

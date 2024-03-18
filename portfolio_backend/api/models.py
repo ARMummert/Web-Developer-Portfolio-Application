@@ -57,7 +57,7 @@ class Education(models.Model):
     def __str__(self):
         return self.degree
 
-class Achievements(models.Model):
+class Achievement(models.Model):
     name = models.CharField(max_length=100)
     description = models.TextField()
     date_received = models.DateField()
@@ -66,7 +66,7 @@ class Achievements(models.Model):
     def __str__(self):
         return self.name
 
-class Certifications(models.Model):
+class Certification(models.Model):
     certificate_name = models.CharField(max_length=100)
     date_received = models.DateField()
     show = models.BooleanField(default=True)
