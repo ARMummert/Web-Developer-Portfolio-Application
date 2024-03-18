@@ -40,7 +40,7 @@ Contact Page - Backend: The background contains the contact page model and form 
         ContactForm
 
 # REQUIREMENTS
-- python 3+ version
+- python 3+
 - Django 
 - Django Rest Framework
 - Django Database - db.sqlite3
@@ -83,7 +83,7 @@ Contact Page - Backend: The background contains the contact page model and form 
 
 
 # INSTALLATION
-## Clone or download this project repository 
+## Clone or download this project repository - make sure to install python 3+, django, and react.
 
 Django Backend
 1. cd ./portfolio_backend
