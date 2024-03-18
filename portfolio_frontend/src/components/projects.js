@@ -58,7 +58,7 @@ const Projects = () => {
               {project.description}<br /><hr />
               <span className='git-link'>    
                 <a className='repo-link' href={project.github} target="_blank" rel="noopener noreferrer" title={`GitHub: ${project.title}`}>
-                  Pettiquette GitHub Repo
+                  GitHub Repo
                 </a>
               </span>
               <span className='git-link'>
